@@ -21,6 +21,7 @@ class Diak:
         return (self.magyar + self.tortenelem + self.matematika + self.idegen_nyelv) / 4.0
 
 
+
 def main():
     diakok = []
 
@@ -48,6 +49,8 @@ def main():
     except FileNotFoundError:                   # hibakezelés
         print("Az osztaly.txt állomány nem található.")
 
+
+
     # Diákok átlagának kiíratása
     print('-----------------------------------------\nDiákok átlaga:\n')
     for diak in diakok:
@@ -62,5 +65,7 @@ def main():
         print(f'{diak.nev :20} {diak.magyar :5}  {diak.tortenelem :8} {diak.matematika :8} {diak.idegen_nyelv :11}'
               f' {diak.igazolt_hianyzas :12} óra {diak.igazolt_hianyzas :12} óra{diak.atlag():19} ')
 
+
 if __name__ == "__main__":
     main()
+
